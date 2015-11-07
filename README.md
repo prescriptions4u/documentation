@@ -17,9 +17,10 @@ Doctor looks up public key.
 With public key, Doctor puts token into user's wallet.
 Prints prescription:
     Name, DOB, Addr
+	Medication and dosage
     Patient's publicKey
-    Doctor's publicKey
-    
+    Doctor's privateKey1
+    ------ detach section -------
     PrivateKey1 at the bottom
     
 User brings prescription to Pharmacy
@@ -31,7 +32,8 @@ Pharmacist frontend displays info on patient:
     
 Pharmacist checks data (Name, etc..)
 Pharmacist enters privateKey2 for user's private wallet
-Coin gets transferred to Pharmacy wallet
+Coin gets transferred from Patient's wallet to Pharmacy wallet
+Coin gets transferred from Pharmacy wallet to Doctor's wallet
 Pharmacist checks blockchain for "suspicious activity"
 If "OK"
     Provide medication
@@ -39,7 +41,6 @@ Else
     ..... ?!!?!
 End
 
-Pharmacy sends coin to Doctor's wallet.
 Pharmacist keeps paper prescription.
-User receives prescription    
+User receives medication
 
